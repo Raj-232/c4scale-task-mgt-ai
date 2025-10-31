@@ -31,7 +31,7 @@ services:
       POSTGRES_PORT: "5432"
       POSTGRES_DB: postgres
       # Optional: Pass Google API Key if needed
-      GOOGLE_API_KEY: AIzaSyCm3WP666lB_rTmWWk7r4zjL8VGUSH3oVc
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
     depends_on:
       postgres:
         condition: service_healthy
