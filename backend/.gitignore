@@ -1,0 +1,9 @@
+# Ignore Mac system files
+.DS_store
+.venv
+__pycahe__
+*.pyc
+VENV
+*.env*
+/script
+*.log*

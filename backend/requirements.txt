@@ -1,0 +1,8 @@
+fastapi[standard]
+sqlalchemy
+psycopg2-binary
+pydantic_settings
+langchain-google-genai 
+google-generativeai 
+langchain
+langgraph
