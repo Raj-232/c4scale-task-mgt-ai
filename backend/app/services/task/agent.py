@@ -29,7 +29,7 @@ prompt = ChatPromptTemplate.from_messages(
         # System Message: Sets the persona and rules
         ("system", system_prompt_text),
         
-        # Chat History Placeholder: Required for conversational memory (even if you don't use it yet)
+        # Chat History Placeholder: Required for conversationownal memory (even if you don't use it yet)
         MessagesPlaceholder(variable_name="chat_history"),
         
         # Human Input: The current user query
@@ -81,5 +81,6 @@ tools = [
 agent_app = create_react_agent(
     llm,
     tools=tools,
+    prompt=prompt,
     checkpointer=memory,
 )
